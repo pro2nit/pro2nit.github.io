@@ -1,6 +1,6 @@
 # Seojun Kim Personal Page
 
-GitHub Pages에 바로 올릴 수 있는 정적 개인 페이지입니다. 참고 사이트처럼 좌측 프로필과 우측 본문 구조를 사용했고, 첨부 Notion export와 Google Scholar 공개 정보를 기반으로 구성했습니다.
+Jon Barron 스타일의 정적 연구자 홈페이지입니다. 상단 소개와 원형 프로필 사진, 썸네일을 곁들인 논문 목록으로 구성되며 GitHub Pages에서 배포됩니다. 레이아웃 참고: https://jonbarron.info/ (https://github.com/jonbarron/jonbarron.github.io).
 
 - English: [https://pro2nit.github.io/](https://pro2nit.github.io/) (`index.html`)
 - Korean: [https://pro2nit.github.io/ko.html](https://pro2nit.github.io/ko.html) (`ko.html`)
@@ -31,7 +31,7 @@ python3 -m http.server 8000
 
 저장소: [pro2nit/pro2nit.github.io](https://github.com/pro2nit/pro2nit.github.io)
 
-현재 공개 사이트는 `gh-pages` 브랜치의 루트(`/`)에서 배포됩니다. `main`에는 별도 디자인이 있으므로 내용 수정 시 두 브랜치에 반영하고, 공개 디자인은 `gh-pages`에서 유지합니다.
+현재 공개 사이트는 `gh-pages` 브랜치의 루트(`/`)에서 배포됩니다. `main`과 `gh-pages`는 같은 디자인을 사용합니다. 변경 사항은 두 브랜치에 반영합니다.
 
 1. 공개할 변경을 `gh-pages` 브랜치에 커밋하고 push합니다.
 2. `Settings > Pages`에서 `Deploy from a branch`, `gh-pages`, `/ (root)` 설정을 유지합니다.
@@ -44,3 +44,10 @@ python3 -m http.server 8000
 첨부 원본에는 전화번호와 상세 주소가 있었지만, 공개 페이지에는 넣지 않았습니다. 필요하면 `index.html`의 프로필 영역에 직접 추가할 수 있습니다.
 
 Google Scholar의 citation 수치는 정적 텍스트라서 시간이 지나면 수동으로 업데이트해야 합니다.
+
+## 이미지와 글꼴
+
+- `assets/papers/posterllama.jpg`: Jaejung Seol, Seojun Kim, Jaejun Yoo의 [PosterLlama 프로젝트](https://lait-cvlab.github.io/PosterLlama/)에 수록된 결과 그림의 일부를 잘라낸 썸네일. 원본은 프로젝트의 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)에 따라 제공되며, 이 썸네일에도 같은 라이선스가 적용됩니다.
+- `assets/papers/stream.jpg`: STREAM 논문(https://arxiv.org/abs/2403.09669)에 수록된 그림.
+- `assets/papers/seoration.svg`: SAR-EO 데이터 쌍을 설명하는 개념도. 실제 위성 관측 결과가 아닙니다.
+- Lato 글꼴은 로컬에서 제공하며 SIL Open Font License는 `assets/fonts/OFL-Lato.txt`에 있습니다.
