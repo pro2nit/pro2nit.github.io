@@ -2,8 +2,8 @@
 
 GitHub Pages에 바로 올릴 수 있는 정적 개인 페이지입니다. 참고 사이트처럼 좌측 프로필과 우측 본문 구조를 사용했고, 첨부 Notion export와 Google Scholar 공개 정보를 기반으로 구성했습니다.
 
-- English: `index.html`
-- Korean: `ko.html`
+- English: [https://pro2nit.github.io/](https://pro2nit.github.io/) (`index.html`)
+- Korean: [https://pro2nit.github.io/ko.html](https://pro2nit.github.io/ko.html) (`ko.html`)
 
 ## 미리보기
 
@@ -29,10 +29,15 @@ python3 -m http.server 8000
 
 ## GitHub Pages 배포
 
-1. GitHub에서 `pro2nit.github.io` 저장소를 만듭니다.
-2. 이 `personal-page/` 폴더 안의 파일을 저장소 루트로 옮깁니다.
-3. `main` 브랜치에 커밋하고 push합니다.
-4. GitHub 저장소의 `Settings > Pages`에서 `Deploy from a branch`, `main`, `/root`를 선택합니다.
+저장소: [pro2nit/pro2nit.github.io](https://github.com/pro2nit/pro2nit.github.io)
+
+현재 공개 사이트는 `gh-pages` 브랜치의 루트(`/`)에서 배포됩니다. `main`에는 별도 디자인이 있으므로 내용 수정 시 두 브랜치에 반영하고, 공개 디자인은 `gh-pages`에서 유지합니다.
+
+1. 공개할 변경을 `gh-pages` 브랜치에 커밋하고 push합니다.
+2. `Settings > Pages`에서 `Deploy from a branch`, `gh-pages`, `/ (root)` 설정을 유지합니다.
+3. GitHub Actions의 `pages build and deployment` 성공 후 공개 주소를 확인합니다.
+
+이전 주소인 `https://pro2nit.github.io/seojunkim.github.io/`와 그 한글 페이지는 `seojunkim.github.io/` 폴더의 안내 페이지를 통해 새 주소로 이동합니다. JavaScript가 활성화된 경우 쿼리와 섹션 해시도 유지됩니다.
 
 ## 공개 전 확인
 
